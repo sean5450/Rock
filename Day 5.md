@@ -205,6 +205,7 @@ CLIENT_CONFIG = { 'LOG_FILE' : '/tmp/client_dbg.log' }
      - /usr/share/kafka/bin/kafka-topics.sh --list --bootstrap-server 172.16.100.100:9092
      - /usr/share/kafka/bin/kafka-topics.sh --describe --bootstrap-server 172.16.100.100:9092
      - /usr/share/kafka/bin/kafka-console-consumer.sh --list --bootstrap-server 172.16.100.100:9092 --topic zeek-raw
+     - /usr/share/kafka/bin/kafka-preferred-replica-election.sh --bootstrap-server 127.0.0.1:9092
      - rm -rf /var/lib/zookeeper/version-2/
      - rm -rf /data/kafka/*
      - rm -f /data/fsf/logs/rockout.logs
