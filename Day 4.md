@@ -74,3 +74,4 @@
   - chown suricata directory `chown -R suricata: /data/suricata`
   - cp /usr/share/suricata/classification.config /etc/suricata/
   - cp /usr/share/suricata/reference.config /etc/suricata/
+  - suricata-update --local '/etc/suricata/custom-*.rules' (offline update)
